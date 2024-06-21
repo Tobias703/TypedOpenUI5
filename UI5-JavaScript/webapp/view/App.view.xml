@@ -7,7 +7,7 @@
 	<Shell>
 		<App class="appClass">
 			<pages>
-				<Page title="UI5 with JavaScript">
+				<Page showHeader="false">
 					<content>
 						<mvc:XMLView
 							viewName="ui5.javascript.view.HelloPanel"
