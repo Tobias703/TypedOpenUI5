@@ -1,0 +1,34 @@
+<mvc:View
+	controllerName="ui5.typescript.controller.HelloPanel"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+>
+	<Panel
+		headerText="UI5 with TypeScript"
+		class="sapUiResponsiveMargin"
+		width="auto"
+	>
+		<content>
+			<Button
+				id="helloDialogButton"
+				text="Say Hello"
+				press=".onOpenDialog"
+				class="sapUiSmallMarginEnd"
+			/>
+			<Button
+				text="Toast Hello"
+				press=".onShowHello"
+				class="sapUiSmallMarginEnd"
+			/>
+			<Input
+				value="{/recipient/name}"
+				valueLiveUpdate="true"
+				width="60%"
+			/>
+			<FormattedText
+				htmlText="Hello {/recipient/name}"
+				class="sapUiSmallMargin sapThemeHighlight-asColor boldInlineText"
+			/>
+		</content>
+	</Panel>
+</mvc:View>

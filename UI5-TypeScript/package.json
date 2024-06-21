@@ -1,0 +1,26 @@
+{
+  "name": "ui5.typescript",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Tobias Seiffert",
+  "description": "UI5-App using TypeScript",
+  "scripts": {
+    "build": "ui5 build --clean-dest",
+    "build:opt": "ui5 build self-contained --clean-dest --all",
+    "start": "ui5 serve --port 8080 -o index.html",
+    "start:dist": "ui5 serve  --port 8080 -o index.html --config ui5-dist.yaml",
+    "ts-typecheck": "tsc --noEmit",
+    "lint": "eslint webapp"
+  },
+  "devDependencies": {
+    "@types/openui5": "1.116.1",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "@ui5/cli": "^3.4.0",
+    "eslint": "^8.46.0",
+    "typescript": "^5.1.6",
+    "ui5-middleware-livereload": "^3.0.0",
+    "ui5-middleware-simpleproxy": "^3.0.0",
+    "ui5-tooling-transpile": "^3.0.1"
+  }
+}

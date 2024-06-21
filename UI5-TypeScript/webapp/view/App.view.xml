@@ -1,0 +1,23 @@
+<mvc:View
+	controllerName="ui5.typescript.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+>
+<Shell>
+	<App class="appClass">
+		<pages>
+			<Page title="UI5 with TypeScript">
+				<content>
+					<mvc:XMLView
+						viewName="ui5.typescript.view.HelloPanel"
+					/>
+					<mvc:XMLView
+						viewName="ui5.typescript.view.CalculatorPanel"
+					/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</Shell>
+</mvc:View>

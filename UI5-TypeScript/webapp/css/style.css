@@ -1,0 +1,12 @@
+html[dir="ltr"] .appClass {
+	margin-right: 0.125rem
+}
+
+html[dir="rtl"] .appClass {
+	margin-left: 0.125rem
+}
+
+.appClass .boldInlineText {
+	display: inline-block;
+	font-weight: bold;
+}

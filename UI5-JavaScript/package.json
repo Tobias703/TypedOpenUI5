@@ -2,7 +2,7 @@
   "name": "ui5.javascript",
   "version": "1.0.0",
   "private": true,
-  "author": "SAP SE",
+  "author": "Tobias Seiffert",
   "description": "UI5-App using JavaScript",
   "scripts": {
     "start": "ui5 serve -o index.html"
