@@ -1,24 +1,24 @@
 <mvc:View
-	controllerName="ui5.walkthrough.controller.HelloPanel"
+	controllerName="ui5.javascript.controller.HelloPanel"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 >
 	<Panel
-		headerText="{i18n>helloPanelTitle}"
+		headerText="Hello World!"
 		class="sapUiResponsiveMargin"
 		width="auto"
 	>
 		<content>
 			<Button
 				id="helloDialogButton"
-				text="{i18n>openDialogButtonText}"
+				text="Say Hello"
 				press=".onOpenDialog"
 				class="sapUiSmallMarginEnd"
 			/>
 			<Button
-				text="{i18n>showHelloButtonText}"
+				text="Toast Hello"
 				press=".onShowHello"
-				class="myCustomButton"
+				class="sapUiSmallMarginEnd"
 			/>
 			<Input
 				value="{/recipient/name}"
@@ -27,7 +27,7 @@
 			/>
 			<FormattedText
 				htmlText="Hello {/recipient/name}"
-				class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+				class="sapUiSmallMargin sapThemeHighlight-asColor boldInlineText"
 			/>
 		</content>
 	</Panel>

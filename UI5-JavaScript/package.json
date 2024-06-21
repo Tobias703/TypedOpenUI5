@@ -1,9 +1,9 @@
 {
-  "name": "ui5.walkthrough",
+  "name": "ui5.javascript",
   "version": "1.0.0",
   "private": true,
   "author": "SAP SE",
-  "description": "UI5 Demo App - Walkthrough Tutorial",
+  "description": "UI5-App using JavaScript",
   "scripts": {
     "start": "ui5 serve -o index.html"
   },

@@ -1,16 +1,9 @@
 {
 	"_version": "1.58.0",
 	"sap.app": {
-		"id": "ui5.walkthrough",
-		"i18n": {
-			"bundleUrl": "i18n/i18n.properties",
-			"supportedLocales": [
-				""
-			],
-			"fallbackLocale": ""
-		},
-		"title": "{{appTitle}}",
-		"description": "{{appDescription}}",
+		"id": "ui5.javascript",
+		"title": "OpenUI5 with JavaScript",
+		"description": "A simple OpenUI5 application with a JavaScript Controller",
 		"type": "application",
 		"applicationVersion": {
 			"version": "1.0.0"
@@ -32,20 +25,8 @@
 				"sap.ui.core": {}
 			}
 		},
-		"models": {
-			"i18n": {
-				"type": "sap.ui.model.resource.ResourceModel",
-				"settings": {
-					"bundleName": "ui5.walkthrough.i18n.i18n",
-					"supportedLocales": [
-						""
-					],
-					"fallbackLocale": ""
-				}
-			}
-		},
 		"rootView": {
-			"viewName": "ui5.walkthrough.view.App",
+			"viewName": "ui5.javascript.view.App",
 			"type": "XML",
 			"id": "app"
 		},

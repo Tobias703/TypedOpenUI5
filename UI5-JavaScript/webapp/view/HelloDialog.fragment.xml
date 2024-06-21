@@ -8,7 +8,7 @@
 	>
 		<beginButton>
 			<Button
-				text="{i18n>dialogCloseButtonText}"
+				text="Close"
 				press=".onCloseDialog"
 			/>
 		</beginButton>
