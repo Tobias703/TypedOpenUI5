@@ -11,7 +11,7 @@ export default class Component extends UIComponent {
         manifest: "json"
     };
 	
-	public init() : void {
+	public init(): void {
 		super.init();
 
 		const oData = {

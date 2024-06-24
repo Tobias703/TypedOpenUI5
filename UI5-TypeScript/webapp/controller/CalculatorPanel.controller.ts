@@ -3,13 +3,13 @@ import Controller from "sap/ui/core/mvc/Controller";
 export default class CalculatorPanel extends Controller {
     public onExpressionChange(oEvent: any): void {
         const oInput = oEvent.getSource();
-        const oIncorrectResultText : any = this.byId("incorrectResultText");
-        const oCorrectResultText : any = this.byId("correctResultText");
+        const oIncorrectResultText: any = this.byId("incorrectResultText");
+        const oCorrectResultText: any = this.byId("correctResultText");
         const sExpression = oInput.getValue();
 
         try {
-            const iIncorrectResult : number = this.incorrectlyCalculateExpression(sExpression);
-            const iCorrectResult : number = this.correctlyCalculateExpression(sExpression);
+            const iIncorrectResult: number = this.incorrectlyCalculateExpression(sExpression);
+            const iCorrectResult: number = this.correctlyCalculateExpression(sExpression);
 
             oIncorrectResultText.setHtmlText("Incorrect Answer: " + iIncorrectResult.toString());
             oCorrectResultText.setHtmlText("Correct Answer: " + iCorrectResult.toString());
