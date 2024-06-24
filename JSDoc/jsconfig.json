@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictFunctionTypes": true
+    },
+    "include": [
+        "jsdoc/**/*.js"
+    ]
+}
