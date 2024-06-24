@@ -1,5 +1,6 @@
 // @ts-check
 /**
+ * Konkateniert zwei Strings
  * @param {string} foo 
  * @param {string} bar 
  * @returns {string}

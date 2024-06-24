@@ -2,14 +2,12 @@
   "name": "jsdoc",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "jsdoc": "^4.0.3"
+    "jsdoc": "^4.0.3",
+    "typescript": "^5.5.2"
   }
 }

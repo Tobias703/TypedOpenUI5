@@ -1,6 +1,4 @@
 // @ts-check
-
-
 const Order10Status = "open";
 const Order20Status = "in progress";
 
