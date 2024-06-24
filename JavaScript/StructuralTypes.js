@@ -1,11 +1,4 @@
-// @flow
-interface Dog {
-    name: string;
-    size: number;
-    age?: number;
-}
-
-function bark(dog: Dog): void {
+function bark(dog){
     console.log(`${dog.name} is barking`);
 }
 

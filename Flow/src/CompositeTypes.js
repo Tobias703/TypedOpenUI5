@@ -26,5 +26,3 @@ myOrderStatusArray.push("in progress");
 
 console.log(Order10Status);
 console.log(Order20Status);
-
-export{}; // Datei wird als Modul behandelt, um globalen Scope zu verhindern

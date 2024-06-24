@@ -1,21 +1,14 @@
-// @flow
-interface Dog {
-    name: string;
-    size: number;
-    age?: number;
-}
-
-const bello: Dog = {
+const bello = {
     name: "Bello",
     height: 5,
 };
 
-const wuffi: Dog = {
+const wuffi = {
     name: "Wuffi",
     size: "2"
 };
 
-const wauzi: Dog = {
+const wauzi = {
     name: "Wauzi",
     age: 2,
 };
