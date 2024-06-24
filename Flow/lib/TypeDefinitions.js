@@ -23,5 +23,3 @@ const wauzi      = {
 console.log(bello.name);
 console.log(wuffi.name);
 console.log(wauzi.age);
-
-export{}; // Datei wird als Modul behandelt, um globalen Scope zu verhindern

@@ -13,5 +13,3 @@ var foo = "bar";
 var bar         = "foo";
 var bar         = "bar";
 var bar         = 42;
-
-export{}; // Datei wird als Modul behandelt, um globalen Scope zu verhindern

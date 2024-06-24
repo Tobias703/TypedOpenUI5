@@ -23,15 +23,3 @@ const Golf =
 
 bark(bello);
 bark(car);
-
-
-
-
-
-
-
-
-
-
-
-export{}; // Datei wird als Modul behandelt, um globalen Scope zu verhindern

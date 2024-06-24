@@ -5,5 +5,3 @@ function foobar(foo, bar) {
 
 
 foobar("foo", 5);
-
-export{}; // Datei wird als Modul behandelt, um globalen Scope zu verhindern
