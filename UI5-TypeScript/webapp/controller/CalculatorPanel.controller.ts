@@ -1,21 +1,40 @@
 import Controller from "sap/ui/core/mvc/Controller";
+import UI5Element from "sap/ui/core/Element";
+import Event from "sap/ui/base/Event";
+import Input from "sap/m/Input";
+
+interface HtmlTextControl {
+    setHtmlText: (html: string) => void;
+}
 
 export default class CalculatorPanel extends Controller {
-    public onExpressionChange(oEvent: any): void {
-        const oInput = oEvent.getSource();
-        const oIncorrectResultText: any = this.byId("incorrectResultText");
-        const oCorrectResultText: any = this.byId("correctResultText");
-        const sExpression = oInput.getValue();
+    private isHtmlTextControl(control: any): control is HtmlTextControl {
+        return control && typeof control.setHtmlText === 'function';
+    }
+
+    public onExpressionChange(oEvent: Event): void {
+        const oInput = oEvent.getSource() as Input;
+        const oIncorrectResultText: UI5Element | undefined = this.byId("incorrectResultText");
+        const oCorrectResultText: UI5Element | undefined= this.byId("correctResultText");
+        const sExpression: string = oInput.getValue();
 
         try {
             const iIncorrectResult: number = this.incorrectlyCalculateExpression(sExpression);
             const iCorrectResult: number = this.correctlyCalculateExpression(sExpression);
 
-            oIncorrectResultText.setHtmlText("Incorrect Answer: " + iIncorrectResult.toString());
-            oCorrectResultText.setHtmlText("Correct Answer: " + iCorrectResult.toString());
+            if (this.isHtmlTextControl(oIncorrectResultText)) {
+                oIncorrectResultText.setHtmlText("Incorrect Answer: " + iIncorrectResult.toString());
+            }
+            if (this.isHtmlTextControl(oCorrectResultText)) {
+                oCorrectResultText.setHtmlText("Correct Answer: " + iCorrectResult.toString());
+            }
         } catch (e) {
-            oIncorrectResultText.setHtmlText("Incorrect Answer: Invalid Expression");
-            oCorrectResultText.setHtmlText("Correct Answer: Invalid Expression");
+            if (this.isHtmlTextControl(oIncorrectResultText)) {
+                oIncorrectResultText.setHtmlText("Incorrect Answer: Invalid Expression");
+            }
+            if (this.isHtmlTextControl(oCorrectResultText)) {
+                oCorrectResultText.setHtmlText("Correct Answer: Invalid Expression");
+            }
         }
     }
 
