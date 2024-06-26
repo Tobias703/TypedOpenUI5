@@ -1,0 +1,1 @@
+Dieses Projekt dient als JavaScript-Vorlage für die anderen, nicht UI5 spezifischen Projekte in diesem Repository. Hier muss deshalb keine Aktion vorgenommen werden.

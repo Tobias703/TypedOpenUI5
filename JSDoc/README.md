@@ -1,0 +1,3 @@
+Dieses Projekt zeigt die Funktionalitäten von JSDoc Type Annotations auf. Es ist nicht dafür gedacht, ausgeführt zu werden, sondern um die Verwendung von verschiedenen Features von JSDoc aufzuzeigen.
+
+Der JSDoc-Code muss nicht kompilliert werden. Um die Typen korrekt annotiert zu bekommen werden dennoch Abhängigkeiten benötigt. Um diese herunterzuladen muss npm via Node.js installiert werden. Anschließend können die Abhängigkeiten mittels ```npm i``` im Terminal installiert werden.
