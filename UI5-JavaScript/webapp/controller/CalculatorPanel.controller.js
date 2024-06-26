@@ -5,15 +5,15 @@ sap.ui.define([
 
     return Controller.extend("ui5.javascript.controller.CalculatorPanel", {
         onExpressionChange: function (oEvent) {
-            var oInput = oEvent.getSource();
-            var oIncorrectResultText = this.byId("incorrectResultText");
-            var oCorrectResultText = this.byId("correctResultText");
-            var sExpression = oInput.getValue();
+            const oInput = oEvent.getSource();
+            const oIncorrectResultText = this.byId("incorrectResultText");
+            const oCorrectResultText = this.byId("correctResultText");
+            const sExpression = oInput.getValue();
 
             try {
                 // Evaluate the expression
-                var iIncorrectResult = this.incorrectlyCalculateExpression(sExpression);
-                var iCorrectResult = this.correctlyCalculateExpression(sExpression);
+                const iIncorrectResult = this.incorrectlyCalculateExpression(sExpression);
+                const iCorrectResult = this.correctlyCalculateExpression(sExpression);
 
                 // Update the text
                 oIncorrectResultText.setHtmlText("Incorrect Answer: " + iIncorrectResult.toString());

@@ -1,13 +1,14 @@
 {
     "compilerOptions": {
         "target": "es2022",
-        "module": "es2022",
+        "module": "none",
         "moduleResolution": "node",
         "skipLibCheck": true,
         "allowJs": true,
         "strict": true,
         "strictPropertyInitialization": false,
         "rootDir": "./webapp",
+        "outDir": "./dist",
         "baseUrl": "./",
         "paths": {
             "ui5/typescript/*": ["./webapp/*"]
