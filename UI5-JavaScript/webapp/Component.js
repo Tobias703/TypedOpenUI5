@@ -11,10 +11,8 @@ sap.ui.define([
 		},
 
 		init() {
-			// call the init function of the parent
 			UIComponent.prototype.init.apply(this, arguments);
 
-			// set data model on view
 			const oData = {
 				recipient: {
 					name: "World"
