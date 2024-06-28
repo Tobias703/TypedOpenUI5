@@ -10,8 +10,6 @@ export default class Component extends UIComponent {
 
 	init() {
 		super.init();
-
-		// set data model on view
 		const oData = {
 			recipient: {
 				name: "World"

@@ -6,11 +6,8 @@ sap.ui.define([
 
 	return Controller.extend("ui5.javascript.controller.HelloPanel", {
 		onShowHello() {
-			// create msg from User Input
 			const sRecipient = this.getView().getModel().getProperty("/recipient/name");
-    		const sMsg = `Hello, ${sRecipient}`;
-
-			// show message
+			const sMsg = `Hello, ${sRecipient}`;
 			MessageToast.show(sMsg);
 		},
 
@@ -18,13 +15,10 @@ sap.ui.define([
 			this.oDialog ??= await this.loadFragment({
 				name: "ui5.javascript.view.HelloDialog"
 			});
-
 			this.oDialog.open();
 		},
 
 		onCloseDialog() {
-			// note: We don't need to chain to the pDialog promise, since this event-handler
-			// is only called from within the loaded dialog itself.
 			this.byId("helloDialog").close();
 		}
 	});
