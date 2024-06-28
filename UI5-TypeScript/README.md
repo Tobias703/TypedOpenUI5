@@ -3,3 +3,5 @@ Dieses Projekt Zeigt, wie eine JavaScript-OpenUI5-Anwendung auf TypeScript migri
 Um die Anwendung zu starten, kann nun ```npm start``` genutzt werden. Die Anwendung kann dann unter der URL ```http://localhost:8080/index.html``` aufgerufen werden. Sollten mehrere Instanzen von OpenUI5 gleichzeitig laufen, kann der Port abweichen. Der Korrekte Port wird immer in dem Terminal angezeigt.
 
 Um den TypeScript-Code manuell zu kompillieren kann der Befehl ```npm run build``` genutzt werden.
+
+Um das Projekt in TypeScript zu debuggen, wird Google Chrome benötigt. Hierzu sollte dieses Projekt in VSCode direkt geöffnet sein (und nicht das Root-Repo). Nachdem der Development-Server durch ein ```npm i``` gestartet wurde, kann die Launch-Konfiguration "Launch Chrome against localhost" gestartet werden. Nun öffnet sich ein Chrome-Fenster. Alle in VSCode gesetzten Breakpoints gelten für dieses Fenster. 

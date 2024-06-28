@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "module": "none",
+        "allowJs": true,
+        "noEmit": true,
+        "strict": true,
+        "types": [
+            "openui5"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "sap/*": [
+                "./types/sap/*"
+            ]
+        },
+    },
+    "include": [
+        "webapp/**/*.js"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

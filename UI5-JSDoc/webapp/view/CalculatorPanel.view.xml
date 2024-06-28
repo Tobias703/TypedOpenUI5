@@ -1,0 +1,15 @@
+<mvc:View controllerName="ui5.jsdoc.controller.CalculatorPanel"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Panel headerText="Simple Calculator Example" class="sapUiResponsiveMargin" width="auto">
+		<content>
+			<Input id="expressionInput" type="Text"
+				placeholder="Enter an expression using basic arithmetic operators"
+				liveChange="onExpressionChange" width="50%" />
+			<FormattedText id="incorrectResultText" htmlText="Incorrect Answer: Invalid Expression"
+				class="sapUiSmallMargin sapThemeHighlight-asColor boldInlineText" />
+			<FormattedText id="correctResultText" htmlText="Correct Answer: Invalid Expression"
+				class="sapUiSmallMargin sapThemeHighlight-asColor boldInlineText" />
+		</content>
+	</Panel>
+</mvc:View>
