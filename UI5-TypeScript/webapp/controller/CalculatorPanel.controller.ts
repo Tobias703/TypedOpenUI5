@@ -42,7 +42,7 @@ export default class CalculatorPanel extends Controller {
         let iResult: number = 0;
 
         for (let i = 0; i < aNumbers.length; i++) {
-            const iNumber: number = Number(aNumbers[i]);
+            const iNumber: number = aNumbers[i];
             iResult += iNumber;
         }
 
